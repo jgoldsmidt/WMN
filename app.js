@@ -9,8 +9,8 @@ var hbs = require('hbs')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var contactoRouter = require('./routes/contacto');
-var productosRouter = require('./routes/productos');
-var altaproductosRouter = require('./routes/altaProducto');
+var librosRouter = require('./routes/Libros');
+var altalibrosRouter = require('./routes/altaLibro');
 //formato de importacion de ES10 -> import {productoRouter} from './routes/productos.js'
 
 var app = express();
@@ -32,23 +32,23 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/usuarios', usersRouter);
 app.use('/contacto', contactoRouter);
-app.use('/productos', productosRouter);
-app.use('/nuevo-producto', altaproductosRouter);
+app.use('libros', librosRouter);
+app.use('/nuevo-libro', altalibrosRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+    next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
 
 module.exports = app;
