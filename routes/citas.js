@@ -26,7 +26,7 @@ router.get('/', async(req, res) => {
     /*let paramURL2 = req.params.id*/
     const consulCita = await tablaCitas.findAll({
         /*where: { title: paramURL2 },*/
-        attributes: ['id', 'title', 'qsp', 'qen', 'qfr'],
+        attributes: ['qid', 'titleid', 'qsp', 'qen', 'qfr'],
         order: [
             ['id', 'ASC']
         ]

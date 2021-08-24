@@ -26,7 +26,7 @@ router.post('/', async(req, res) => {
             title: newLibro.title,
             year: newLibro.year,
             active: 0,
-            img: " ",
+            img: "",
         })
 
         res.render("form-altaLibro.hbs", { titleweb, yearweb, alta: true })
