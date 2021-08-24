@@ -33,7 +33,7 @@ router.post('/', (req, res) => {
         // Envio, segun la conexion del Transport
         let info = await transporter.sendMail({
             from: `${user.nombre} <${user.email}>`, // sender address
-            to: "guido.varela@gmail.com", // list of receivers
+            to: "julieta.gold@gmail.com", // list of receivers
             subject: "Nuevo Mensaje", // Subject line
             //text: "Hello world?", // plain text body
             html: `<strong>Nuevo Contacto</strong>

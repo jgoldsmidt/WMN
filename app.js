@@ -11,7 +11,7 @@ var usersRouter = require('./routes/users');
 var contactoRouter = require('./routes/contacto');
 var librosRouter = require('./routes/libros');
 var altaLibrosRouter = require('./routes/altaLibro');
-//formato de importacion de ES10 -> import {productoRouter} from './routes/productos.js'
+var citasRouter = require('./routes/citas');
 
 var app = express();
 
@@ -34,6 +34,7 @@ app.use('/usuarios', usersRouter);
 app.use('/contacto', contactoRouter);
 app.use('/libros', librosRouter);
 app.use('/nuevo-libro', altaLibrosRouter);
+app.use('/citas', citasRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

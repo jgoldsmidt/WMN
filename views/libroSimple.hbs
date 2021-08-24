@@ -16,40 +16,19 @@
     </div>
     <div class="container">
         <div class="row mb-5">
-            <div class="col-6">
-                {{#if libroSingle.img}}
-                    <img class="img-fluid w-100"  src="/images/{{libroSingle.img}}" class="card-img" alt="{{title}}">
-                {{else}}
-                    <img class="img-fluid w-100"  src="/images/default.png" class="card-img" alt="{{title}}">
-                {{/if}}
-            </div>
-            <div class="col-6">
+                <div class="col-6">
                 <h3>
-                {{libroSingle.title}}
+                {{libroSingle.title}} 
                 </h3>
-                <p>info
-                </p>
-                <div class="row">
-                    <div class="col-6 h3">
-                        $ {{libroSingle.year}}.-
-                    </div>
-                    <div class="col-6">
-                        {{#if libroSingle.active}}
-                            <a href="" class="btn btn-primary">Disponible</a>
-                        {{else}}
-                            <a href="" class="btn btn-danger">No disponble</a>
-                        {{/if}}
-                    </div>
-                </div>
             </div>
         </div>
-        
-            <div class="alert alert-success">
-                jjjjjj
-            </div>
-            <div class="alert alert-success">
-                eeeee
-            </div>
+            <div class="row">
+        {{#each Citas}}
+        <div class="col-4">{{qes}}Español</div>
+        <div class="col-4">{{qen}}Ingles</div>
+        <div class="col-4">{{qfr}}Francés</div>    
+        {{/each}}
+    </div>
     </div>
 </div>
 

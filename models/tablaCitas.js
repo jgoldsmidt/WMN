@@ -10,9 +10,9 @@ const tablaCitas = db.define('textbook', {
         allowNull: false
     },
     title: { type: Sequelize.INTEGER },
-    qsp: { type: Sequelize.STRING },
-    qen: { type: Sequelize.STRING },
-    qfr: { type: Sequelize.STRING },
+    qsp: { type: Sequelize.TEXT },
+    qen: { type: Sequelize.TEXT },
+    qfr: { type: Sequelize.TEXT },
 });
 
 module.exports = tablaCitas

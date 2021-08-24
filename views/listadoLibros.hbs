@@ -1,32 +1,47 @@
 
-<div class="container-fluid mt-5">
+<div class="container-fluid mt-1">
     <div class="container">
 
         <div class="row">
             <div class="col-9">
                 <h1>{{title-web}}</h1>
             </div>
-            <div class="col-3 text-end">
-                <a href="/nuevo-libro" class="btn btn-dark">Solicitar Libro</a>
-            </div>
         </div>
-        <hr>
 
         <div class="row">
         {{#each Libros}}
-            <div class="col-md-3">
+            <div class="col-md-4">
+                {{#if active}}
                 <a href="/libros/{{id}}">
-                <div class="card mb-4 card-prod bg-dark">
+                <div class="card-text-center card mb-4 card-prod">
                         {{#if img}}
                             <img  src="/images/{{img}}" class="card-img" alt="{{title}}">
                         {{else}}
                             <img  src="/images/default.jpg" class="card-img" alt="{{title}}">
                         {{/if}}
-                    <div class="card-body">
-                        <p class="h5 text-white">{{title}}</p>
-                    </div>
-                </div>
-                </a>
+                    <div class="card-body bg-dark" style="text-align: center;">
+                        <p class="h5 text-white card-text">{{title}}<br>
+                        </p><i class="h6 text-muted">({{year}})</i><br>
+                            <span class="text-success">Disponible</span>
+                            </div>
+                        </div>
+                    </a>
+                {{else}}
+                <div class="card-text-center card mb-4 card-prod">
+                        {{#if img}}
+                            <img  src="/images/{{img}}" class="card-img" alt="{{title}}">
+                        {{else}}
+                            <img  src="/images/default.jpg" class="card-img" alt="{{title}}">
+                        {{/if}}
+                    <div class="card-body bg-dark" style="text-align: center;">
+                        <p class="h5 text-white card-text">{{title}}<br>
+                        </p><i class="h6 text-muted">({{year}})</i> <br>
+                            <span class="text-danger">No disponible</span>
+                            </div>
+                        </div>
+                
+                            {{/if}}
+                    
             </div>
         {{/each}}
     </div>

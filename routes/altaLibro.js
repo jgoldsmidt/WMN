@@ -14,22 +14,21 @@ const tablaLibros = require('../models/tablaLibros')
 router.post('/', async(req, res) => {
     const newLibro = {
         id: 0,
-        title: req.body.nombre,
-        year: req.body.anio,
-        active: req.body.activo,
-        img: req.body.imagen,
+        title: req.body.title,
+        year: req.body.year,
+        active: req.body.active,
+        img: req.body.img,
     }
     console.log(newLibro)
-        //ojo el orden de los campos -> ver la tabla antes
     try {
         const cargarLibro = await tablaLibros.create({
-                id: newLibro.id,
-                title: newLibro.nombre,
-                year: newLibro.anio,
-                active: newLibro.activo,
-                img: newLibro.imagen,
-            })
-            //console.log(cargarProd)
+            id: newLibro.id,
+            title: newLibro.title,
+            year: newLibro.year,
+            active: newLibro.active,
+            img: newLibro.img,
+
+        })
 
         res.render("form-altaLibro.hbs", { titleweb, yearweb, alta: true })
 

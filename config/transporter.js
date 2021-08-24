@@ -7,10 +7,8 @@ let transporter = nodemailer.createTransport({
     //465 puerto seguro SSL // 587, puerto default TLS
     secure: true, // true for 465, false for other ports
     auth: {
-        user: "guido.varela@gmail.com", // user Mail
+        user: "julieta.gold@gmail.com", // user Mail
         pass: "qaucdwfiecinkrjj", // password user Mail
-        //Para usar Gmail como servidor SMTP, debemos usar la cuenta como user, y generar una contrase;a de verificacion
-        //https://myaccount.google.com/security
     },
 });
 
