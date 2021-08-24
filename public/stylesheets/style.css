@@ -9,3 +9,16 @@
 a {
     text-decoration: none !important;
 }
+
+#particles-js {
+    position: relative;
+    width: 100vw;
+    height: 90vh;
+    background-color: #000000;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 10;
+    margin: 0;
+}

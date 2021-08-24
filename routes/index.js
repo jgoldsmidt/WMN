@@ -5,7 +5,6 @@ let yearweb = new Date().getFullYear();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-    res.render('index.hbs', { titleweb: 'Joyce', yearweb: year });
+    res.render('index.hbs', { titleweb: 'Joyce', yearweb });
 });
-
 module.exports = router;
