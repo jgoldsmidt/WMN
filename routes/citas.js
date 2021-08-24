@@ -28,7 +28,7 @@ router.get('/', async(req, res) => {
         /*where: { title: paramURL2 },*/
         attributes: ['qid', 'titleid', 'qsp', 'qen', 'qfr'],
         order: [
-            ['id', 'ASC']
+            ['qid', 'ASC']
         ]
     });
     console.log(consulCita);

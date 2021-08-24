@@ -2,31 +2,31 @@ var express = require('express');
 var router = express.Router();
 
 let users = [{
-    nombre: ["Mario", "Baracus"],
-    anioNac: 1952,
-    localidad: "Ituzaingo, Illinois",
-    profesion: "Militar retirado",
-    genero: 1,
-    activo: true
-}, {
-    nombre: ['Carlitos', "Bala"],
-    anioNac: 1930,
-    localidad: "Caballito, CABA",
-    profesion: "Procer de la TV y de la infancia",
-    genero: 1,
-    activo: true
-}, {
-    nombre: ["China", "Zorrilla"],
-    anioNac: 1925,
-    localidad: "Montevideo, Uruguay",
-    profesion: 'actriz',
+    nombre: ["Julieta", "Goldsmidt"],
+    anioNac: 1993,
+    localidad: "Ramos Mejía, Buenos Aires",
+    profesion: "Psicóloga e Investigadora",
     genero: 0,
-    activo: false
+    activo: true
 }, {
-    nombre: ["Maria", "Moreno"],
-    anioNac: 1987,
-    localidad: "Rocha, Uruguay",
-    profesion: 'panadera',
+    nombre: ['Roberto Alejo', "Salvo"],
+    anioNac: 1992,
+    localidad: "Ramos Mejía, Buenos Aires",
+    profesion: "Administrativo",
+    genero: 1,
+    activo: true
+}, {
+    nombre: ["Lara", "Antolini"],
+    anioNac: 1993,
+    localidad: "Morón, Buenos Aires",
+    profesion: 'Lic en turismo',
+    genero: 0,
+    activo: true
+}, {
+    nombre: ["Yi-Ran", "Wang"],
+    anioNac: 1986,
+    localidad: "Flores, CABA",
+    profesion: 'Psicóloga',
     genero: 0,
     activo: false
 }]
