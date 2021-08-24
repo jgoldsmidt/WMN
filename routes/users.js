@@ -35,10 +35,10 @@ let title = "Usuarios"
 let date = new Date()
 
 /* GET users listing. */
-/*router.get('/', function(req, res, next) {
+router.get('/', function(req, res, next) {
 
     res.render('usuarios.hbs', { users, title, year: date.getFullYear() })
 
-});*/
+});
 
 module.exports = router;
