@@ -2,7 +2,7 @@ const Sequelize = require('sequelize')
 const db = require('../config/db')
 
 //Definimos la tabla la cual vamos a consumir
-const tablaProductos = db.define('libros', {
+const tablaLibros = db.define('libros', {
     id: {
         type: Sequelize.INTEGER,
         primaryKey: true,

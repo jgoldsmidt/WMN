@@ -9,7 +9,7 @@ var hbs = require('hbs')
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var contactoRouter = require('./routes/contacto');
-var librosRouter = require('./routes/Libros');
+var librosRouter = require('./routes/libros');
 var altalibrosRouter = require('./routes/altaLibro');
 //formato de importacion de ES10 -> import {productoRouter} from './routes/productos.js'
 
