@@ -15,12 +15,12 @@ let envios = 'ENVIOS x CORREO A TODO EL PAIS. <br> Podes cargarle tu dirección 
 router.get('/', async(req, res) => {
     //consulta
     const traerLibro = await tablaLibros.findAll({
-            attributes: ['id', 'title', 'year'],
-            order: [
-                ['id', 'DESC']
-            ]
-        })
-        //console.log(traerProd)
+        attributes: ['id', 'title', 'year', 'img'],
+        order: [
+            ['id', 'DESC']
+        ]
+    })
+    console.log(traerLibro)
     res.render('listadoLibros.hbs', { titleweb, yearweb, Libros: traerLibro })
 })
 
