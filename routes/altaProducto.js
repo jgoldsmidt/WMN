@@ -1,4 +1,4 @@
-const express = require('express')
+/*const express = require('express')
 const router = express.Router()
 
 let title = "Alta de productos"
@@ -43,4 +43,4 @@ router.post('/', async (req,res) => {
     }
 })
 
-module.exports = router;
+module.exports = router;*/

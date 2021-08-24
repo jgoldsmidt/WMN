@@ -1,4 +1,4 @@
-const express = require('express')
+/*const express = require('express')
 const router = express.Router()
 //importamos Nodemailer
 const nodemailer = require("nodemailer");
@@ -54,4 +54,4 @@ router.post('/', (req,res) => {
         
 })
 
-module.exports = router;
+module.exports = router;*/
