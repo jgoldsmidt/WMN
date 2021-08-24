@@ -1,6 +1,6 @@
-/*const express = require('express')
+const express = require('express')
 const router = express.Router()
-//importamos Nodemailer
+    //importamos Nodemailer
 const nodemailer = require("nodemailer");
 
 
@@ -8,13 +8,13 @@ let title = "Contacto"
 
 let year = new Date().getFullYear();
 
-router.get('/',function(request,response){
+router.get('/', function(request, response) {
     // response.send("Esto es el contacto")
     //render('vista a renderizar',{data a enviar a la vista})
-    response.render('contacto.hbs',{data,year})
+    response.render('contacto.hbs', { data, year })
 })
 
-router.post('/', (req,res) => {
+router.post('/', (req, res) => {
     // console.log(req.body.nombre)
     // console.log(req.body.email)
 
@@ -22,10 +22,10 @@ router.post('/', (req,res) => {
         nombre: req.body.nombre,
         email: req.body.email,
         mensaje: req.body.mensaje
-    } 
+    }
 
     //Enviar datos por email -> Nodemailer
-    async function main(){
+    async function main() {
 
         //transporter
         const transporter = require('../config/transporter')
@@ -44,14 +44,14 @@ router.post('/', (req,res) => {
 
         //console.log("Message sent: %s", info.messageId);
         console.log(info)
-        // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
+            // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
-        res.render('enviocontacto',{user, title, year, envio:true})
+        res.render('enviocontacto', { user, title, year, envio: true })
     }
 
     //main().catch(res.render("errorcontacto.hbs",{error:"error"}));
     main().catch(console.error)
-        
+
 })
 
-module.exports = router;*/
+module.exports = router;
