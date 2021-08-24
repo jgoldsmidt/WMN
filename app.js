@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/usuarios', usersRouter);
 app.use('/contacto', contactoRouter);
-app.use('libros', librosRouter);
+app.use('/libros', librosRouter);
 app.use('/nuevo-libro', altaLibrosRouter);
 
 // catch 404 and forward to error handler

@@ -4,7 +4,7 @@
 
         <div class="row">
             <div class="col-9">
-                <h1>{{title}}</h1>
+                <h1>{{title-web}}</h1>
             </div>
             <div class="col-3 text-end">
                 <a href="/nuevo-libro" class="btn btn-primary">Nuevo Libro</a>
@@ -17,13 +17,13 @@
             <div class="col-md-3">
                 <a href="/libros/{{id}}">
                 <div class="card mb-4 card-prod shadow-sm bg-dark">
-                        {{#if imagen}}
-                            <img  src="/images/{{imagen}}" class="card-img" alt="{{nombre}}">
+                        {{#if img}}
+                            <img  src="/images/{{img}}" class="card-img" alt="{{title}}">
                         {{else}}
-                            <img  src="/images/default.png" class="card-img" alt="{{nombre}}">
+                            <img  src="/images/default.png" class="card-img" alt="{{title}}">
                         {{/if}}
                     <div class="card-body">
-                        <p class="h4 text-white">{{nombre}}</p>
+                        <p class="h4 text-white">{{title}}</p>
                     </div>
                 </div>
                 </a>

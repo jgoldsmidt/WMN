@@ -9,9 +9,6 @@
             <li class="breadcrumb-item">
                 <a class="text-dark" href="/libros">Libros</a>
             </li>
-            <li class="breadcrumb-item">
-                {{libroSingle.categoria}}
-            </li>
         </ol>
     </nav>
         </div>
@@ -20,28 +17,27 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-6">
-                {{#if libroSingle.imagen}}
-                    <img class="img-fluid w-100"  src="/images/{{libroSingle.imagen}}" class="card-img" alt="{{nombre}}">
+                {{#if libroSingle.img}}
+                    <img class="img-fluid w-100"  src="/images/{{libroSingle.img}}" class="card-img" alt="{{title}}">
                 {{else}}
-                    <img class="img-fluid w-100"  src="/images/default.png" class="card-img" alt="{{nombre}}">
+                    <img class="img-fluid w-100"  src="/images/default.png" class="card-img" alt="{{title}}">
                 {{/if}}
             </div>
             <div class="col-6">
                 <h3>
-                {{libroSingle.nombre}}
+                {{libroSingle.title}}
                 </h3>
-                <p>
-                {{libroSingle.}}
+                <p>info
                 </p>
                 <div class="row">
                     <div class="col-6 h3">
-                        $ {{libroSingle.anio}}.-
+                        $ {{libroSingle.year}}.-
                     </div>
                     <div class="col-6">
-                        {{#if libroSingle.activo}}
-                            <a href="" class="btn btn-primary">Pedilo!</a>
+                        {{#if libroSingle.active}}
+                            <a href="" class="btn btn-primary">Disponible</a>
                         {{else}}
-                            <a href="" class="btn btn-danger">Sin stock</a>
+                            <a href="" class="btn btn-danger">No disponble</a>
                         {{/if}}
                     </div>
                 </div>
@@ -49,10 +45,10 @@
         </div>
         
             <div class="alert alert-success">
-                {{legales}}
+                jjjjjj
             </div>
             <div class="alert alert-success">
-                {{envios}}
+                eeeee
             </div>
     </div>
 </div>

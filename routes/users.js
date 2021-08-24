@@ -31,13 +31,13 @@ let users = [{
     activo: false
 }]
 
-let title = "Usuarios"
+let titleweb = "Usuarios"
 let date = new Date()
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
 
-    res.render('usuarios.hbs', { users, title, year: date.getFullYear() })
+    res.render('usuarios.hbs', { users, titleweb, yearweb: date.getFullYear() })
 
 });
 

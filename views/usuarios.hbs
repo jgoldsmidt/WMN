@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="container">
-        <h2>{{title}}</h2>
+        <h2>{{title-web}}</h2>
         <hr>
         <div class="row">
             {{#each users}}
@@ -16,7 +16,7 @@
                         <img src="/images/user2.png" alt="{{nombre}}">
                         {{/if}}
                         <p class="m-0">{{#each nombre}} <strong>{{this}}</strong> {{/each}}</p>
-                        <p class="m-0">Edad: {{year-anioNac}}</p>
+                        <p class="m-0">Edad: {{yearweb-anioNac}}</p>
                         <p class="m-0">{{localidad}}</p>
                         <p class="m-0">{{profesion}}</p>
                         {{#if activo}}

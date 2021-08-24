@@ -4,14 +4,14 @@ const router = express.Router()
     /*const nodemailer = require("nodemailer");*/
 
 
-let title = "Contacto"
+let titleweb = "Contacto"
 
-let year = new Date().getFullYear();
+let yearweb = new Date().getFullYear();
 
 router.get('/', function(request, response) {
     // response.send("Esto es el contacto")
     //render('vista a renderizar',{data a enviar a la vista})
-    response.render('contacto.hbs', { data, year })
+    response.render('contacto.hbs', { yearweb })
 })
 
 router.post('/', (req, res) => {
@@ -46,7 +46,7 @@ router.post('/', (req, res) => {
         console.log(info)
             // Message sent: <b658f8ca-6296-ccf4-8306-87d57a0b4321@example.com>
 
-        res.render('enviocontacto', { user, title, year, envio: true })
+        res.render('enviocontacto', { user, titleweb, yearweb, envio: true })
     }
 
     //main().catch(res.render("errorcontacto.hbs",{error:"error"}));
