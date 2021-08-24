@@ -1,7 +1,11 @@
-
-.userInactivo{
+.userInactivo {
     filter: grayscale(1)
 }
-.textareas{
+
+.textareas {
     resize: none;
+}
+
+a {
+    text-decoration: none !important;
 }
