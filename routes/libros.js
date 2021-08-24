@@ -15,7 +15,7 @@ let envios = 'ENVIOS x CORREO A TODO EL PAIS. <br> Podes cargarle tu dirección 
 router.get('/', async(req, res) => {
     //consulta
     const traerLibro = await tablaLibros.findAll({
-        attributes: ['id', 'title', 'year', 'img'],
+        attributes: ['id', 'title', 'year', 'active', 'img'],
         order: [
             ['id', 'DESC']
         ]
@@ -27,9 +27,7 @@ router.get('/', async(req, res) => {
 router.get('/:id', async(req, res) => {
     let paramURL = req.params.id
 
-    const consultaLibro = await tablaLibros.findOne({ where: { id: paramURL } });
+    const consulCita = await tablaLibros.findOne({ where: { id: paramURL } });
 
-    res.render('Librosimple.hbs', { LibroSingle: consultaLibro, legales, envios, titleweb, yearweb })
+    res.render('librosimple.hbs', { CitaSingle: consulCita, titleweb, yearweb })
 })
-
-module.exports = router;
