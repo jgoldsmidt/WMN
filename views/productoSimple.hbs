@@ -4,13 +4,13 @@
             <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb  ">
         <ol class="breadcrumb">
             <li class="breadcrumb-item active" aria-current="page">
-                <a class="text-dark" href="/">Home</a>
+                <a class="text-dark" href="/">Inicio</a>
             </li>
             <li class="breadcrumb-item">
-                <a class="text-dark" href="/productos">Productos</a>
+                <a class="text-dark" href="/Libros">Libros</a>
             </li>
             <li class="breadcrumb-item">
-                {{prodSingle.categoria}}
+                {{libroSingle.categoria}}
             </li>
         </ol>
     </nav>
@@ -20,26 +20,26 @@
     <div class="container">
         <div class="row mb-5">
             <div class="col-6">
-                {{#if prodSingle.imagen}}
-                    <img class="img-fluid w-100"  src="/images/{{prodSingle.imagen}}" class="card-img" alt="{{nombre}}">
+                {{#if libroSingle.imagen}}
+                    <img class="img-fluid w-100"  src="/images/{{libroSingle.imagen}}" class="card-img" alt="{{nombre}}">
                 {{else}}
                     <img class="img-fluid w-100"  src="/images/default.png" class="card-img" alt="{{nombre}}">
                 {{/if}}
             </div>
             <div class="col-6">
                 <h3>
-                {{prodSingle.nombre}}
+                {{libroSingle.nombre}}
                 </h3>
                 <p>
-                {{prodSingle.descripcion}}
+                {{libroSingle.}}
                 </p>
                 <div class="row">
                     <div class="col-6 h3">
-                        $ {{prodSingle.precio}}.-
+                        $ {{libroSingle.precio}}.-
                     </div>
                     <div class="col-6">
-                        {{#if prodSingle.stock}}
-                            <span class="badge bg-primary">cantidad: {{prodSingle.stock}}</span>
+                        {{#if libroSingle.stock}}
+                            <span class="badge bg-primary">cantidad: {{libroSingle.stock}}</span>
                             <a href="" class="btn btn-primary">Pedilo!</a>
                         {{else}}
                             <a href="" class="btn btn-danger">Sin stock</a>
