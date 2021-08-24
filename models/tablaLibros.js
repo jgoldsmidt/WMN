@@ -11,8 +11,8 @@ const tablaLibros = db.define('books', {
     },
     title: { type: Sequelize.STRING },
     year: { type: Sequelize.INTEGER },
-    activo: { type: Sequelize.INTEGER },
-    imagen: { type: Sequelize.STRING },
+    active: { type: Sequelize.INTEGER },
+    img: { type: Sequelize.STRING },
 });
 
 module.exports = tablaLibros
