@@ -7,15 +7,15 @@
                 <h1>{{title}}</h1>
             </div>
             <div class="col-3 text-end">
-                <a href="/nuevo-producto" class="btn btn-primary">Nuevo Producto</a>
+                <a href="/nuevo-libro" class="btn btn-primary">Nuevo Libro</a>
             </div>
         </div>
         <hr>
 
         <div class="row">
-        {{#each productos}}
+        {{#each libros}}
             <div class="col-md-3">
-                <a href="/productos/{{id}}">
+                <a href="/libros/{{id}}">
                 <div class="card mb-4 card-prod shadow-sm bg-dark">
                         {{#if imagen}}
                             <img  src="/images/{{imagen}}" class="card-img" alt="{{nombre}}">
