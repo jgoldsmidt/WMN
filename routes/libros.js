@@ -27,7 +27,7 @@ router.get('/:id', async(req, res) => {
 
     const consulLibro = await tablaLibros.findOne({ where: { id: paramURL } });
 
-    res.render('librosimple.hbs', { libroSingle: consulLibro })
+    res.render('libroSimple.hbs', { libroSingle: consulLibro })
 })
 
 module.exports = router;
